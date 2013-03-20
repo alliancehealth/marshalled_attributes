@@ -1,11 +1,11 @@
 require 'rubygems'
-require 'activerecord'
+require 'active_record'
 
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'marshalled_attributes'))
 
 ActiveRecord::Base.establish_connection(
-  :adapter => 'sqlite3',
-  :dbfile => ":memory:"
+  :adapter  => 'sqlite3',
+  :database => ":memory:"
 )
 
 ActiveRecord::Migration.verbose = false
