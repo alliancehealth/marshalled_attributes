@@ -12,9 +12,9 @@ allows a wider range of objects to be serialized than by using YAML serializatio
 Usage
 -----
 
-Install the plugin in your Rails app with:
+Install the gem in your Rails app with:
 
-    ./script/plugin install git://github.com/jsl/marshalled_attributes.git
+    gem marshalled_attributes, :git => 'git://github.com/uxp/marshalled_attributes.git
 
 Then, create the attributes in your migration as binary columns.
 
