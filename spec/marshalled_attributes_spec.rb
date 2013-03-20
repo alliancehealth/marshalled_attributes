@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'activerecord'
 
-require File.join(File.dirname(__FILE__), %w[.. init])
+require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'marshalled_attributes'))
 
 ActiveRecord::Base.establish_connection(
   :adapter => 'sqlite3',
